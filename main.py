@@ -541,6 +541,28 @@ class ImageResizerWindow(QMainWindow):
         group_log.setLayout(layout_log)
         main_layout.addWidget(group_log)
         
+        # 6. 底部信息栏（Git 地址）
+        info_frame = QFrame()
+        info_frame.setFrameShape(QFrame.StyledPanel)
+        info_frame.setStyleSheet("""
+            QFrame {
+                background-color: #f5f5f5;
+                border-top: 1px solid #ddd;
+                padding: 5px;
+            }
+        """)
+        info_layout = QHBoxLayout(info_frame)
+        info_layout.setContentsMargins(10, 5, 10, 5)
+        
+        git_label = QLabel()
+        git_label.setText('<a href="https://github.com/tcmmx/PicSlim.git" style="color: #0078d4; text-decoration: none;">🔗 GitHub: https://github.com/tcmmx/PicSlim.git</a>')
+        git_label.setOpenExternalLinks(True)
+        git_label.setStyleSheet("font-size: 10px; color: #666;")
+        info_layout.addWidget(git_label)
+        info_layout.addStretch()
+        
+        main_layout.addWidget(info_frame)
+        
         # 设置布局比例
         main_layout.setStretchFactor(group_select, 1)
         main_layout.setStretchFactor(group_resize, 0)
