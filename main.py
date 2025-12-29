@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-ImageOPT - 批量图片分辨率缩小工具 v1.0
+PicSlim - 批量图片分辨率缩小工具 v1.0
 使用 PySide6 和 Pillow 实现
 """
 
@@ -261,7 +261,7 @@ class ImageResizerWindow(QMainWindow):
     
     def _init_ui(self):
         """初始化界面"""
-        self.setWindowTitle("ImageOPT - 批量图片分辨率缩小工具 v1.0")
+        self.setWindowTitle("PicSlim - 批量图片分辨率缩小工具 v1.0")
         self.setMinimumSize(900, 950)  # 增加窗口高度，确保预览区域完全显示
         
         # 中央部件
@@ -1177,7 +1177,7 @@ def main():
     app = QApplication(sys.argv)
     
     # 设置应用信息
-    app.setApplicationName("ImageOPT")
+    app.setApplicationName("PicSlim")
     app.setApplicationVersion("1.0")
     
     # 创建主窗口

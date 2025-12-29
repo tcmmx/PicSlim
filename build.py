@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-ImageOPT 打包脚本
+PicSlim 打包脚本
 用于设置exe图标和名称
 """
 
@@ -13,7 +13,7 @@ from pathlib import Path
 def build_exe():
     """打包exe文件"""
     print("=" * 50)
-    print("ImageOPT 打包脚本")
+    print("PicSlim 打包脚本")
     print("=" * 50)
     print()
     

@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul
 echo ========================================
-echo ImageOPT 打包脚本
+echo PicSlim 打包脚本
 echo ========================================
 echo.
 
@@ -20,12 +20,12 @@ REM 打包命令
 echo [信息] 开始打包...
 echo.
 
-pyinstaller -F -w %ICON_PARAM% --name "ImgOPT-批量图片缩放工具" --clean main.py
+pyinstaller -F -w %ICON_PARAM% --name "PicSlim-批量图片缩放工具" --clean main.py
 
 echo.
 echo ========================================
 echo 打包完成！
-echo 生成的EXE文件位于: dist\ImgOPT-批量图片缩放工具.exe
+echo 生成的EXE文件位于: dist\PicSlim-批量图片缩放工具.exe
 echo ========================================
 pause
 
